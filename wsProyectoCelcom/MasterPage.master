@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Celcom</title>
+    <link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400.600" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container-fluid">
+        <section class="row">
+            <aside class="col-xs-12 col-sm-12 col-md-2 col-lg-2 all-page">
+                <center>
+                    <img src="multimedia/profile.jpg" class="img-responsive img-circle profile-photo" alt="Responsive image">
+                    <p>
+                        <h5>Axel Fernando - Empleado</h5>
+                        <span>(afernando)</span>
+                    </p>
+                </center>
+            </aside>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 ">
+                <div>
+                    <center>
+                        <img src="multimedia/banner.jpg" class="img-responsive image-banner" alt="Responsive image">
+                    </center>
+                </div>
+                <ul class="nav nav-tabs links-pages navbar-center">
+                    <li role="presentation">
+                        <a href="wsFiltroProducto.aspx">Búsqueda de producto</a>
+                    </li>
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                          Reportes <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="wsVsClientes.aspx">Clientes</a></li>
+                          <li><a href="wsVsProveedores.aspx">Proveedores</a></li>
+                          <li><a href="wsVsProductos.aspx">Productos</a></li>
+                          <li><a href="wsVsSucursales.aspx">Sucursales</a></li>
+                        </ul>
+                  </li>
+                  <li role="presentation" class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                      Administración <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="wsAdminClientes.aspx">Clientes</a></li>
+                      <li><a href="wsAdminProveedores.aspx">Proveedores</a></li>
+                      <li><a href="wsAdminProductos.aspx">Productos</a></li>
+                      <li><a href="wsAdminSucursales.aspx">Sucursales</a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+        <section class="main row" style="background-color: #00A2B7">
+            <aside class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                <hr>
+                <p align="center"><b>Información - Usuario</b></p>
+                <ul class="info-list">
+                  <li>Telefono: <i>7717727615</i></li>
+                  <li>Correo: <i>afer@gmail.com</i></li>
+                  <li>Ubicación: <i>P. Soto</i></li>
+                </ul>
+                <hr>
+            </aside>
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 back-color content-principal">
+                <!-- <h3>Gestión de:</h3> -->
+                <div class="content-editor">
+                 <form id="form1" runat="server">
+                    <div>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                        </asp:ContentPlaceHolder>
+                    </div>
+                  </form>
+                </div>
+            </div>
+        </section>      
+    </div>
+    <!-- <div class="clearfix" visible-sm-block></div> -->
+    <!-- <span class="clearfix"></span> -->
+    <footer>
+        <div class="">
+            <strong>&copy;2020 - Derechos reservados</strong>
+            <span class="ico">
+                <a href="https://www.fb.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </span>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+</html>

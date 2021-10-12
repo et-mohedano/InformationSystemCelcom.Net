@@ -1,0 +1,102 @@
+﻿
+html{
+    margin: 0;
+    background: rgb(104, 103, 101);
+}
+td{
+    height: 27pt;
+}
+.main{
+    background-color: #00A2B7;
+}
+
+.color1{
+    background: #34495e;
+    color: #fff;
+}
+.image-banner{
+    max-height: 90pt;
+}
+
+aside{
+    background: #00A2B7;
+    color: #fff;
+}
+footer{
+    background-color: rgb(104, 103, 101);
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+article{
+    background: #f2f2f2;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.profile-photo{
+    width: 65px;
+    height: 65px;
+}
+.back-color{
+    background-color: #fff;
+    color: #000;
+}
+.links-pages a{
+    color: #000;
+}
+.ico{
+    font-size: x-large;
+}
+.ico a{
+    color: #fff;
+}
+.menu-main{
+    text-align: center;
+}
+.nav{
+    padding-left: 40%;
+}
+h2{
+    margin: auto;
+    margin-top: -100px;
+}
+.content-principal{
+    margin: auto;
+    margin-top: -10px;
+
+}
+.all-page{
+    padding-top: 20px
+}
+.content-editor{
+    text-align: justify;
+    padding: 30px;
+    margin: auto;
+    margin-top: -10px;
+
+}
+.info-list{
+    color: #fff;
+}
+.banner-page{
+    background-image: url("../multimedia/banner.jpg");
+    height: 110pt;
+}
+tr{
+    margin: auto;
+    margin-top: 40px;
+}
+.options-table{
+    margin-top: 10pt; text-align: center;
+}
+.options-icon{
+    margin: auto;
+    margin-right: 25pt;
+    margin-left: 25pt;
+}
+.options-icon input{
+    height:25pt;
+}
